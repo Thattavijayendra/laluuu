@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/20c5629a29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" class="food-munch-logo" alt="Logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Course
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Course 1 name</a>
+                            <a class="dropdown-item" href="#">Course 2 name</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="#">Course 3 name</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Notes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/rough/notes/english_grammar.pdf">English Grammar</a>
+                            <a class="dropdown-item" href="/rough/notes/spoken_english.pdf">Spoken English Tips</a>
+                            <!-- <div class="dropdown-divider"></div> -->
+                            <a class="dropdown-item" href="/rough/notes/Writen_skill.pdf">Writing Skills Guide</a>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+          
+        </nav>
+      
+    </div>
+    <div class="main-container">
+    <img src="/back.png" alt="">
+    </div>
+    <div class="container">
+        <h2 class="text-center">Recommended Videos</h2>
+        <div class="courses">
+            <!-- Course Card 1 -->
+            <div class="course-card">
+                <img src="https://genlish.com/wp-content/uploads/2017/04/English1.jpg" alt="Python Course">
+                <div class="card-content">
+                    <p class="tag">Free Course</p>
+                    <h5>English Tutorials - 100 Days</h5>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid tempore eligendi non mollitia vero voluptas perspiciatis alias cum fugiat corrupti?</p>
+                    <a href="#" class="btn">Start Watching</a>
+                </div>
+            </div>
+
+            <!-- Course Card 2 -->
+            <div class="course-card">
+                <img src="https://cdn.pixabay.com/photo/2017/09/07/10/07/english-2724442_1280.jpg" alt="JavaScript Course">
+                <div class="card-content">
+                    <p class="tag">Free Course</p>
+                    <h5>Zero to Hero Course</h5>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi reprehenderit animi recusandae, suscipit perferendis repellendus incidunt vero placeat alias illum.</p>
+                    <a href="#" class="btn">Start Watching</a>
+                </div>
+            </div>
+
+            <!-- Course Card 3 -->
+            <div class="course-card">
+                <img src="https://t4.ftcdn.net/jpg/05/18/65/75/360_F_518657595_keQdDMCfv8SgYvjOgPMe8BCx7hkuplIf.jpg" alt="React Course">
+                <div class="card-content">
+                    <p class="tag">Free Course</p>
+                    <h5>Advanced English</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, culpa? Mollitia, ad odit animi error at consequatur similique dolores iure!</p>
+                    <a href="#" class="btn">Start Watching</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>We provide high-quality English learning resources, courses, and notes to improve your language skills.</p>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="notes.html">Notes</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">&copy; 2025 English Learning | All Rights Reserved</p>
+        </div>
+    </footer>
+    
+
+</body>
+
+</html>
