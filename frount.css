@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(222, 218, 218);
+}
+ul li{
+    padding-left: 40px;
+    font-size: 1.5rem;
+}
+.v1
+{
+    display: flex;
+    align-items: start;
+    /* background-color: red; */
+    flex-direction: column;
+    position: absolute;
+    top:100px;
+    left: 50px;
+    color: aqua;
+
+}

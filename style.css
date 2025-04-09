@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+/* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #f8f9fa;
@@ -6,21 +9,14 @@ body {
     padding: 0;
 }
 
-.head-container
-{
-    position: relative;
-}
-.collapse{
-    position: absolute;
-    right: 50px;
-}
+/* Navbar Logo */
 .food-munch-logo {
     width: 90px;
-
 }
-.main-container
-{
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20190220/ourmid/pngtree-cartoon-education-training-cram-school-image_9149.jpg');
+
+/* Hero Section */
+.main-container {
+    background-image: url('https://www.gettingsmart.com/wp-content/uploads/2017/01/Teacher-Helping-Young-Students-at-Table-Feature-Image.jpg');
     height: 80vh;
     background-size: cover;
     background-position: center;
@@ -29,158 +25,56 @@ body {
     justify-content: center;
     align-items: center;
     background-repeat: no-repeat;
+    opacity: 0.75;
+    
 }
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 40px auto;
-    text-align: center;
-}
-
+/* Recommended Videos Section */
 h2 {
     font-weight: 600;
     margin-bottom: 30px;
 }
 
-/* Course Cards Layout */
-.courses {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-/* Individual Course Card */
-.course-card {
-    background: white;
-    width: 100%;
-    max-width: 350px;
+/* Course Cards */
+.card {
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.course-card:hover {
+.card:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.course-card img {
-    width: 100%;
+.card img {
     height: 200px;
     object-fit: cover;
 }
 
-.card-content {
-    padding: 20px;
-    text-align: left;
-}
-
-.tag {
+.card .badge {
     font-size: 12px;
     text-transform: uppercase;
-    color: #6f42c1;
     font-weight: bold;
 }
 
-h5 {
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-p {
-    font-size: 14px;
-    color: #666;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #6f42c1;
-    color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-size: 14px;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: #5936a2;
-}
-
-@media (max-width: 900px) {
-    .courses {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-.footer {
+/* Footer */
+footer {
     background: #343a40;
     color: white;
-    padding: 40px 0;
-    text-align: center;
 }
 
-.footer .container {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.footer .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.footer-col {
-    width: 30%;
-    margin-bottom: 20px;
-    color: white;
-}
-
-.footer-col h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    position: relative;
-}
-
-.footer-col p {
-    font-size: 14px;
-    line-height: 1.6;
-    color: white;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col ul li {
-    margin: 10px 0;
-}
-
-.footer-col ul li a {
+footer a {
     text-decoration: none;
     color: white;
-    font-size: 14px;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
-.footer-col ul li a:hover {
+footer a:hover {
     color: #ffc107;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
 .social-links a {
-    color: white;
     font-size: 18px;
     transition: 0.3s;
 }
@@ -189,21 +83,36 @@ p {
     color: #ffc107;
 }
 
-.copyright {
-    margin-top: 20px;
-    font-size: 14px;
-    opacity: 0.7;
-    color: white;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .footer .row {
-        flex-direction: column;
-        align-items: center;
+    .main-container {
+        height: 60vh;
     }
 
-    .footer-col {
-        width: 100%;
-        text-align: center;
+    .card {
+        margin-bottom: 20px;
     }
 }
+
+
+/* Ask the Instructor Section */
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+.card input, .card textarea {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+.card button {
+    background-color: #007bff;
+    border: none;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
